@@ -41,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		0D31F6F42266F2DA00B6287D /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		0D31F6F62266F99F00B6287D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0D87C1C5225B13EC00F1DA90 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0D87C1C7225B140D00F1DA90 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		0D87C1C9225B223200F1DA90 /* CaptureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureViewController.swift; sourceTree = "<group>"; };
@@ -145,6 +146,7 @@
 				0DA0A4BB2256EAC3004BF3FE /* Assets.xcassets */,
 				0DA0A4C02256EAC3004BF3FE /* Info.plist */,
 				0D31F6F42266F2DA00B6287D /* PostTableViewCell.swift */,
+				0D31F6F62266F99F00B6287D /* README.md */,
 			);
 			path = Juanstagram;
 			sourceTree = "<group>";
