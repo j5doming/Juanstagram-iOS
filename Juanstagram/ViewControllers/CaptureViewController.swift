@@ -8,6 +8,7 @@
 
 import UIKit
 import AlamofireImage
+import Parse
 
 class CaptureViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     @IBOutlet weak var imageView: UIImageView!
@@ -50,7 +51,25 @@ class CaptureViewController: UIViewController, UIImagePickerControllerDelegate, 
     
     }
     
-    @IBAction func onSubmit(_ sender: Any) {
+    @IBAction func onSubmitButton(_ sender: Any) {
+        // create new table in Parse server
+        let post = PFObject(className: "Posts")
+        
+        post["caption"] = captionTextField.text!
+        post["author"] = PFUser.current()!
+        
+        // get image data and use file object to store it
+        let imageData = imageView.image!.pngData()
+        let file = PFFileObject(data: imageData!)
+        post["image"] = file
+        
+        post.saveInBackground() { (success, error) in
+            if success {
+                self.dismiss(animated: true, completion: nil)
+            } else {
+                
+            }
+        }
     }
     
     /*
